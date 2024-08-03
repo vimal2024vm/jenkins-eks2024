@@ -2,7 +2,7 @@ data "aws_availability_zones" "azs" {}
 
 module "my-vpc" {
   source          = "terraform-aws-modules/vpc/aws"
-  version         = "2.32.0"
+  version         = "5.8.1"
   name            = "my-vpc"
   cidr            = var.vpc_cidr_block
   private_subnets = var.private_subnet_cidr_blocks
